@@ -1,0 +1,98 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* nav  */
+
+nav {
+    background: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    /* background-color: #777; for testing */
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+a.folklore {
+    background: url(folklore.png) no-repeat center;
+    background-size: 90%;
+}   
+
+a.evermore {
+    background: url(evermore.png) no-repeat center;
+    background-size: 90%;
+}
+
+.covid-albums {
+    max-width: 80px;
+    margin: 0 auto;
+
+}
+
+.covid-albums a { 
+    text-indent: -1000000px; /* I'm following a tutorial, ick */ 
+}
+
+/* flex styles */
+
+nav ul.covid-albums {
+    flex: 1 1 0;
+    display: flex;
+}
+
+nav ul.covid-albums li {
+    flex: 1 1 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    nav ul {
+        display: flex;
+        /* justify-content: center; /* with removing flex: 1 1 0 below, will make them all gather close at center, like centre aligned text header */
+       /*    justify-content: flex-end; /* sends them to the right, flex-start pushes to left */
+       /* justify-content: space-around; /* will space them out evenly */
+       /* justify-content: space-between; /* will get rid of extra space, so first and last will be right at the end of the nav */
+       /* justify-content: flex-start; */
+    }
+
+    nav li {
+        flex: 1 1 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .covid-albums {
+        margin: 0;
+    }
+
+
+
+
+}

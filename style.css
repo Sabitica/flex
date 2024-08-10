@@ -24,18 +24,22 @@ body{
 .box { 
     height: 100px;
     min-width: 200px;
-    flex-grow: 1;
+  /*  flex-basis: 200px; /* means it's going to start at 200px, kind of like a min-width */
+    /* flex-grow: 1; */
     /* width: 320px; */
+    flex: 1 0 200px; /* flex-grow, flex-shrink, flex-basis shorthand */
 }
 
 .one {
     background-color: red;
+    /* flex-basis: 100px; */
     /* flex-grow: 1; */
     /* flex-shrink: 1; */
 }
 
 .two {
     background-color: blue;
+    /* flex-basis: 200px; */
     /* flex-grow: 2; */
     /* flex-shrink: 2; */
 }
@@ -44,4 +48,7 @@ body{
     background-color: green; 
     /* flex-grow: 3; */
     /* flex-shrink: 3; */
+    /* flex-basis: 300px; */
 }
+
+/* Nav Menu html file */
