@@ -57,6 +57,25 @@ a.evermore {
     text-indent: -1000000px; /* I'm following a tutorial, ick */ 
 }
 
+/* grid vs flex base styles */ 
+
+#blocks {
+    margin: 20px;
+}
+
+article {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+article h2 {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
 /* flex styles */
 
 nav ul.covid-albums {
@@ -92,7 +111,20 @@ nav ul.covid-albums li {
         margin: 0;
     }
 
+    #blocks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
+    article {
+        flex: 0 1 32%;
+        transition: flex-basis 0.2s linear;
+    }
+
+    article.stack {
+        flex: 0 1 100%;
+    }
 
 
 }
