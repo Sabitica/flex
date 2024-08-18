@@ -14,18 +14,6 @@ body{
     margin: 0 auto;
 }
 
-.flex-container-1 { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;;
-}
-
-.box-1 { 
-    height: 100px;
-    min-width: 200px;
-    flex-grow: 1;
-}
-
 .one {
     background-color: red;
 }
@@ -36,4 +24,93 @@ body{
 
 .three { 
     background-color: green; 
+}
+
+/* Evenly stretched styles  */
+
+.flex-container-1 { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-1 { 
+    height: 100px;
+    min-width: 200px;
+    flex-grow: 1;
+}
+
+/* Each box has a fixed width, all evenly spaced */
+
+.flex-container-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-2 {
+    width: 250px;
+    height: 100px;
+}
+
+/* Each box has a fixed width, all evenly spaced, with margins on either side */
+
+.flex-container-3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-3 {
+    min-width: 150px;
+    height: 100px;
+}
+
+/* Reversing the box order (green, blue, red) */
+
+.flex-container-4 {
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+.box-4 {
+    min-width: 150px;
+    height: 100px;
+}
+
+/* Reversing the box order (green, blue, red) and all evenly spaced with margins on either side */
+
+.flex-container-5 {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse;
+}
+
+.box-5 {
+    min-width: 150px;
+    height: 100px;
+}
+
+/* Columns, evenly spaced with space around, reversing the column order */
+
+.flex-container-6 {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column-reverse;
+    height: 700px;
+}
+
+.box-6 {
+    min-width: 150px;
+    height: 150px;
+}
+
+/* Boxes in center, tightly center aligned, with space on either side of group of boxes */
+
+.flex-container-7 {
+    display: flex;
+    justify-content: center;
+}
+
+.box-7 {
+    width: 150px;
+    height: 150px;
 }
